@@ -24,6 +24,6 @@ it("PUT API testing Using Flip Plugin", () => {
 
 it("DELETE API testing Using Cypress API Plugin", () => {
   cy.api("DELETE", "https://reqres.in/api/users/2").should((response) => {
-    expect(response.status).to.eq(2045);
+    expect(response.status).to.eq(204);
   });
 });
